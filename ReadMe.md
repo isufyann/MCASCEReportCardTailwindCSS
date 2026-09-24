@@ -5,21 +5,82 @@ We’ll start a **responsive modern website** using Tailwind CSS.
 
 
 
- 
-Markdown Cheat Sheet (Common Syntax)
-Here is a quick reference guide to writing standard Markdown syntax: [1]
-Element	Markdown Syntax	Rendered HTML Equivalent
-Heading 1	# Heading 1	<h1>Heading 1</h1>
-Heading 2	## Heading 2	<h2>Heading 2</h2>
-Bold text	**Bold Text**	<strong>Bold Text</strong>
-Italic text	*Italic Text* or _Italic_	<em>Italic Text</em>
-Links	[Google](https://google.com)	<a href="...">Google</a>
-Unordered List	* Item 1
-* Item 2	Bulleted list
-Ordered List	1. First Item
-2. Second Item	Numbered list
-Inline Code	`code`	Highlighted code text
-Code Block	```
-code block
-```	Fenced code box
+ # Markdown syntax guide
+
+## Headers
+
+# This is a Heading h1
+## This is a Heading h2
+###### This is a Heading h6
+
+## Emphasis
+
+*This text will be italic*  
+_This will also be italic_
+
+**This text will be bold**  
+__This will also be bold__
+
+_You **can** combine them_
+
+## Lists
+
+### Unordered
+
+* Item 1
+* Item 2
+* Item 2a
+* Item 2b
+    * Item 3a
+    * Item 3b
+
+### Ordered
+
+1. Item 1
+2. Item 2
+3. Item 3
+    1. Item 3a
+    2. Item 3b
+
+## Images
+
+![This is an alt text.](/image/Markdown-mark.svg "This is a sample image.")
+
+## Links
+
+You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+
+## Blockquotes
+
+> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
+>
+>> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+
+## Tables
+
+| Left columns  | Right columns |
+| ------------- |:-------------:|
+| left foo      | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
+
+## Blocks of code
+
+```
+let message = 'Hello world';
+alert(message);
+```
+
+## Mermaid diagrams
+```mermaid
+graph TD
+  A[Start] --> B{Decision}
+  B -->|Yes| C[Finish]
+  B -->|No| D[Alternate]
+```
+
+## Inline code
+
+This web site is using `markedjs/marked`.
+
 	
